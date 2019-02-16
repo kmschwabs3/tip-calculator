@@ -16,5 +16,15 @@ function calcTip() {
 		serviceQuality = .1;
 	}
 	var tipAmount = amount * serviceQuality;
-	 
+	var total = parseFloat(tipAmount) + parseFloat(amount);
+	var perPerson = total/partySize;
+
+	var tipUI = document.getElementById("tipTotal");
+		tipUI.innerHTML = "Total Tip: $" + tipAmount.toFixed(2);
+	var totalUI = document.getElementById("billTotal");
+		totalUI.innerHTML = "Total Amount: $" + total.toFixed(2);
+	var perPersonUI = document.getElementById("amountPerPerson");
+		perPersonUI.innerHTML = "Amount Per Person: $" + perPerson.toFixed(2);
+
+		event.preventDefault();
 };
