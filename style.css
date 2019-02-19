@@ -1,6 +1,8 @@
-body {
+body.tipCalcBody {
 	text-align: center;
 	background-color: #B2F3FFFF;
+	font-family: 'Titillium Web', sans-serif;
+	margin: 5%;
 }
 
 #container {
@@ -9,6 +11,38 @@ body {
 	background-color: #DFCDFDFF;
 }
 
+.tipContainer {
+	padding: 5px;
+}
+
 h1 {
 	font-size: 40px;
+	padding-top: 10px;
+	font-weight: bolder;
+}
+
+.labels {
+	text-align: right;
+	margin: auto;
+}
+
+.textField, .serviceSelector {
+	text-align: left;
+} 
+
+div.rowSpace{
+	margin:8px;
+}
+
+div.col-field {
+	display:inline-block;
+	float:none;	
+}
+
+button.submit {
+	margin-bottom: 10px;
+}
+
+.tipUI {
+	padding: 3px;
 }
